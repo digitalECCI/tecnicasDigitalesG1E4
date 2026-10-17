@@ -1,0 +1,18 @@
+# Archivos temporales de Quartus Prime
+db/
+incremental_db/
+simulation/
+*.qws
+output_files/*.rpt
+output_files/*.summary
+output_files/*.done
+output_files/*.jdi
+output_files/*.pin
+output_files/*.sld
+output_files/*.smsg
+output_files/*.pof
+
+# Archivos de simulacion temporales (Icarus / GTKWave)
+*.vvp
+*.vcd
+build/

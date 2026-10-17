@@ -1,0 +1,20 @@
+# Archivos de simulacion temporales
+*.vcd
+*.vvp
+*.out
+*.out1
+build/
+simulation/
+
+# Archivos temporales y compilacion de Quartus Prime
+db/
+incremental_db/
+output_files/
+*.qws
+*.rpt
+*.summary
+*.done
+*.jdi
+*.pin
+*.sld
+*.smsg

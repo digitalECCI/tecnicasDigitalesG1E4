@@ -1,0 +1,23 @@
+`timescale 1ps / 1ps
+
+module sumador1b (
+    input  wire A,
+    input  wire B,
+    input  wire Cin,
+    output wire S,
+    output wire Cout
+);
+    wire xor1;
+    wire and1, and2, and3;
+
+    // Suma (S)
+    xor (xor1, A, B);
+    xor (S,    xor1, Cin);
+
+    // Acarreo (Cout)
+    and (and1, A, B);
+    and (and2, A, Cin);
+    and (and3, B, Cin);
+    or  (Cout, and1, and2, and3);
+
+endmodule

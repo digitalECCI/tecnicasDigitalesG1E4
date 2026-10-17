@@ -7,8 +7,18 @@
 | Nombre | Rol |
 |--------|-----|
 | Diego Pineda | Integrante |
-| Daniel Moyano | Integrante |
+| Sergio Daniel Moyano | Integrante |
 | Andrés Mejía | Integrante |
+
+---
+
+## 📑 Índice de Laboratorios
+
+| Laboratorio | Título | Carpeta / Informe |
+| :---: | :--- | :---: |
+| **Lab 01** | Compuertas Lógicas, Detector de Primos y Sumador Completo | [Ver documentación abajo](#-laboratorio-01--compuertas-lógicas-detector-de-primos-y-sumador-completo) |
+| **Lab 02** | Sumador de 4 Bits mediante Instanciación (*Ripple Carry*) | [📂 **Ir al informe completo de Lab 02**](lab02/README.md) |
+| **Lab 03** | Display de 7 Segmentos y Sumador de 3 Bits (*Ánodo Común*) | [📂 **Ir al informe completo de Lab 03**](lab03/README.md) |
 
 ---
 
@@ -119,6 +129,24 @@ vvp tb_Lab01
 # Ver formas de onda
 gtkwave ondas_lab01.vcd
 ```
+
+---
+
+## ➕ Laboratorio 02 — Sumador de 4 Bits mediante Instanciación
+
+* **Descripción:** Implementación de un sumador binario de 4 bits con acarreo en cascada (*Ripple Carry Adder*) empleando instanciación jerárquica de 4 sumadores completos de 1 bit (`sumador1b.v`).
+* **Simulación Exhaustiva:** 512 casos evaluados ($A, B, C_{in}$) en GTKWave ($5120\,\text{ps}$).
+* **Hardware:** Síntesis y asignación de pines físicos en la FPGA Intel MAX 10 (DE10-Lite).
+* 📄 **[Acceder al informe técnico completo y código fuente de Lab 02](lab02/README.md)**
+
+---
+
+## 📟 Laboratorio 03 — Display de 7 Segmentos y Sumador de 3 Bits
+
+* **Descripción:** Sistema combinacional que integra un sumador de 3 bits con acarreo en cascada y un decodificador a display de 7 segmentos en lógica de **ánodo común** (activo en bajo). Muestra el resultado de la suma en formato hexadecimal ($0$ a $E$).
+* **Simulación Exhaustiva:** 64 combinaciones verificadas ($8 \times 8$) en GTKWave ($640\,\text{ns}$).
+* **Hardware & Video:** Implementación en tarjeta FPGA Intel MAX 10 (DE10-Lite) con registro en video del funcionamiento real.
+* 📄 **[Acceder al informe técnico completo y código fuente de Lab 03](lab03/README.md)**
 
 ---
 
